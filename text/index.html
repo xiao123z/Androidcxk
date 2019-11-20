@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0
+        }
+ .jis{
+     border: 1px solid;
+     width: 200px;
+     margin:20px auto;
+ }
+ button{
+     width:96px;
+     height: 30px;
+
+ }
+ input{
+     width: 198px;
+     height: 50px;
+     outline:none;
+     border-bottom:1px solid;
+     border-top:0;
+     /* margin-bottom: 10px; */
+border-right:0;
+border-left:0;
+
+ }
+    </style>
+</head>
+<body>
+
+     <div class="jis">
+       <input type="number" id="f" placeholder="请输入第一个数字"><br>
+       <input type="number" id="l" placeholder="请输入第二个数字"><br>
+       <textarea name="" id="n" cols="26" style="background:#fff" rows="8" disabled></textarea><br>
+       <button onclick="jia()">+</button>
+       <button onclick="jian()">-</button>
+       <button onclick="cheng()">*</button>
+       <button onclick="chu()">/</button> 
+      <button onclick="qc()">清除</button>
+      <button onclick="gb()">关闭计算器</button>
+         </div>
+
+   
+    
+       <script>
+function gb(){
+   if(confirm("你确定退出吗")){
+        window.open("about:blank","_self").close() 
+   }
+       
+    }
+
+
+ 
+    function qc(){
+                       var a=document.getElementById("f").value=""
+               var b=document.getElementById("l").value=""
+               var c=document.getElementById("n").value=""
+
+    }
+           function jia(){
+               var a=document.getElementById("f").value
+               var b=document.getElementById("l").value
+               a=Number(a)
+               b=Number(b)
+               var c=document.getElementById("n").value=a + b
+           }
+           function jian(){
+               var a=document.getElementById("f").value
+               var b=document.getElementById("l").value
+               a=Number(a)
+               b=Number(b)
+               var c=document.getElementById("n").value=a - b
+           }
+           function cheng(){
+               var a=document.getElementById("f").value
+               var b=document.getElementById("l").value
+               a=Number(a)
+               b=Number(b)
+               var c=document.getElementById("n").value=a * b
+           }
+           function chu(){
+               var a=document.getElementById("f").value
+               var b=document.getElementById("l").value
+               a=Number(a)
+               b=Number(b)
+               var c=document.getElementById("n").value=a / b
+           }
+        
+       </script>
+        </body>
+        </html>
