@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <style>
+   *{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html,body{height: 100%;}
+.android{
+    width: 500px;
+    height: 500px;
+    border: 1px red solid;
+    margin: 50px auto;
+    position: relative;
+    background: #ccc;
+}
+.tou{
+    width: 200px;
+    height: 100px;
+    background: #51a251;
+    position: absolute;
+    left: 134px;
+    top: 20px;
+    border-radius: 100px 100px 0px 0px;
+}
+.tou::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    left: 50px;
+    top: 45px;
+    border-radius: 50%
+}
+.tou::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    left: 120px;
+    top: 45px;
+    border-radius: 50%
+}
+.st{
+    width: 200px;
+    height: 230px;
+    background: #51a251;
+    border-radius: 0px 0px 30px 30px;
+    position:absolute;left:50%;top:50%;margin: -115px 0 0 -115px;
+}
+
+.st::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 180px;
+    background: #51a251;
+    position: absolute;
+    left: -50px;
+    border-radius: 10px;
+}
+
+.st::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 180px;
+    background: #51a251;
+    position: absolute;
+    right: -50px;
+    border-radius: 10px;
+}
+.zuijiao{
+    width: 31px;
+    height: 88px;
+    background: #51a251;
+    position: absolute;
+    bottom: 56px;
+    left: 175px;
+    border-radius:10px ;
+
+}
+.youjiao{
+    width: 31px;
+    height: 88px;
+    background: #51a251;
+    position: absolute;
+    bottom: 56px;
+    right: 200px;
+    border-radius:10px ;
+}
+
+
+   
+   </style>
+</head>
+<body>
+    <div class="android">
+       
+        <div class="tou"></div>
+<div class="st"></div>
+<div class="zuoshou"></div>
+<div class="zuijiao"></div>
+<div class="youjiao"></div>
+
+    </div>
+</body>
+</html>
